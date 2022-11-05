@@ -1,0 +1,16 @@
+{
+  "name": "yelp-clone",
+  "version": "1.0.0",
+  "description": "building a restaurants grading system with React, Node, and PostgeSQL",
+  "main": "server.js",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "author": "apkwan",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  }
+}
